@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Gigabyte1027</title>
+  <link rel="apple-touch-icon-precomposed" href="touch-icon-iphone.png">
+  <link rel="apple-touch-icon-precomposed" sizes="152x152" href="touch-icon-ipad.png">
+  <link rel="apple-touch-icon-precomposed" sizes="180x180" href="touch-icon-iphone-retina.png">
+  <link rel="apple-touch-icon-precomposed" sizes="167x167" href="touch-icon-ipad-retina.png">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+	<style>
+body {
+	background-color: black;
+}
+div.at-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+}
+.at-item {
+  width: 100px;
+  height: 100px;
+  background-image: url('/images/logo.png');
+  animation-name: scale-up-center;
+  animation-duration: 2.5s;
+  animation-timing-function: ease-in;
+  animation-delay: 0s;
+  animation-iteration-count: 1;
+  animation-direction: normal;
+  animation-fill-mode: none;
+}
+@keyframes scale-up-center {
+  0%{
+    -webkit-transform: scale(.2);
+    transform: scale(.0 );
+    opacity: 0;
+  }
+  35%{
+    -webkit-transform: scale(1);
+    transform: scale(1);
+    opacity: 1;
+  }
+  66%{
+    -webkit-transform: scale(1);
+    transform: scale(1.5);
+    opacity: 1;
+  }
+  100%{
+    -webkit-transform: scale(1);
+    transform: scale(6);
+    opacity: 0;
+  }
+}
+	</style>
+</head>
+<body>
+	<div class='at-container'>
+  <div class='at-item' >
+  </div>
+</div>
+</body>
+</html>
