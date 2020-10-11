@@ -124,7 +124,7 @@ body {
 <div id="navbar">
 	<div id="nav1" onclick="home()"></div>
 	<div id="nav2" onclick="chat()"></div>
-	<div id="nav3"></div>
+	<div id="nav3" onclick="game()"></div>
 	<div id="nav4"></div>
 	<div id="nav5"></div>
 </div>
@@ -173,7 +173,7 @@ body {
 		document.getElementById('nav4').style.backgroundImage = "url('/images/cydia.png')";
 		document.getElementById('nav5').style.backgroundImage = "url('/images/hamburger.png')";
 	}
-	function chat() {
+	function games() {
 		document.getElementById('home').style.left = "-200%";
 		document.getElementById('chat').style.left = "-100%";
 		document.getElementById('game').style.left = "0";
