@@ -38,8 +38,6 @@ body {
 	height: 100%;
 	left: 200%;
 	bottom: 0;
-	transition: left 0.2s, transform 0.2s ease;
-	transform: scale 0.6;
 	background-size: 100% 100%;
 }
 #game {
@@ -51,8 +49,6 @@ body {
 	height: 100%;
 	left: 300%;
 	bottom: 0;
-	transition: left 0.2s, transform 0.2s ease;
-	transform: scale 0.6;
 	background-size: 100% 100%;
 }
 #navbar {
@@ -159,9 +155,8 @@ body {
 <script>
 	function home() {
 		document.getElementById('home').style.left = "0";
-		document.getElementById('home').style.transform = "scale(1)";
 		document.getElementById('chat').style.left = "200%";
-		document.getElementById('chat').style.transform = "scale(0.6)";
+		document.getElementById('game').style.left = "300%";
 		document.getElementById('nav1').style.backgroundImage = "url('/images/home2.png')";
 		document.getElementById('nav2').style.backgroundImage = "url('/images/chat.png')";
 		document.getElementById('nav3').style.backgroundImage = "url('/images/games.png')";
@@ -170,12 +165,21 @@ body {
 	}
 	function chat() {
 		document.getElementById('home').style.left = "-100%";
-		document.getElementById('home').style.transform = "scale(0.6)";
 		document.getElementById('chat').style.left = "0";
-		document.getElementById('chat').style.transform = "scale(1)";
+		document.getElementById('game').style.left = "100%";
 		document.getElementById('nav1').style.backgroundImage = "url('/images/home.png')";
 		document.getElementById('nav2').style.backgroundImage = "url('/images/chat2.png')";
 		document.getElementById('nav3').style.backgroundImage = "url('/images/games.png')";
+		document.getElementById('nav4').style.backgroundImage = "url('/images/cydia.png')";
+		document.getElementById('nav5').style.backgroundImage = "url('/images/hamburger.png')";
+	}
+	function chat() {
+		document.getElementById('home').style.left = "-200%";
+		document.getElementById('chat').style.left = "-100%";
+		document.getElementById('game').style.left = "0";
+		document.getElementById('nav1').style.backgroundImage = "url('/images/home.png')";
+		document.getElementById('nav2').style.backgroundImage = "url('/images/chat.png')";
+		document.getElementById('nav3').style.backgroundImage = "url('/images/games2.png')";
 		document.getElementById('nav4').style.backgroundImage = "url('/images/cydia.png')";
 		document.getElementById('nav5').style.backgroundImage = "url('/images/hamburger.png')";
 	}
