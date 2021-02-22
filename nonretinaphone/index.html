@@ -10,112 +10,8 @@
   <meta name="apple-mobile-web-app-status-bar-style" content="black">
   <meta name="apple-mobile-web-app-capable" content="yes">
   <meta name="viewport" content="width=320">
-	<style>
-body {
-	background-color: black;
-	color: white;
-	font-family: Arial, Helvetica, sans-serif;
-	
-}
-#home {
-	position: fixed;
-	background-image: url('/images/black.png');
-	color: white;
-	font-family: Arial, Helvetica, sans-serif;
-	width: 100%;
-	height: 100%;
-	left: 0;
-	bottom: 0;
-}
-#chat {
-	position: fixed;
-	background-image: url('/images/chat.jpg');
-	color: white;
-	font-family: Arial, Helvetica, sans-serif;
-	width: 100%;
-	height: 100%;
-	left: 200%;
-	bottom: 0;
-	background-size: 100% 100%;
-}
-#game {
-	position: fixed;
-	background-image: url('/images/arcade.jpg');
-	color: white;
-	font-family: Arial, Helvetica, sans-serif;
-	width: 100%;
-	height: 100%;
-	left: 300%;
-	bottom: 0;
-}
-#navbar {
-	background: url(/images/gradient.png);
-	position: fixed;
-	height: 49px;
-	width: 100%;
-	bottom: 0;
-	left: 0;
-	z-index: 99;
-	background-size: 100% 100%;
-}
-#nav1 {
-    position: fixed;
-    background-image: url(/images/home2.png);
-    width: 64px;
-    height: 49px;
-    background-size: 100% 100%;
-    bottom: 0;
-    left: 0;
-}
-#nav2 {
-    position: fixed;
-    background-image: url(/images/chat.png);
-    width: 64px;
-    height: 49px;
-    background-size: 100% 100%;
-    bottom: 0;
-    left: 64px;
-}
-#nav3 {
-    position: fixed;
-    background-image: url(/images/games.png);
-    width: 64px;
-    height: 49px;
-    background-size: 100% 100%;
-    bottom: 0;
-    left: 128px;
-}
-#nav4 {
-    position: fixed;
-    background-image: url(/images/cydia.png);
-    width: 64px;
-    height: 49px;
-    background-size: 100% 100%;
-    bottom: 0;
-    left: 192px;
-}
-#nav5 {
-    position: fixed;
-    background-image: url(/images/hamburger.png);
-    width: 64px;
-    height: 49px;
-    background-size: 100% 100%;
-    bottom: 0;
-    left: 256px;
-}
-#body {
-    position: fixed;
-    left: 0;
-    top: 0;
-    width: 100%;
-    height: 100%;
-    background: url(/images/logo.png);
-    background-position: center;
-    background-repeat: no-repeat;
-	background-size: 128px 128px;
-    overflow: hidden;
-}
-	</style>
+  <link rel="stylesheet" href="/noretina.css">
+   <script src="/noretina.js"></script> 
 </head>
 <body>
 <div id="navbar">
@@ -150,37 +46,6 @@ body {
 	
 	
 	
-<script>
-	function home() {
-		document.getElementById('home').style.left = "0";
-		document.getElementById('chat').style.left = "200%";
-		document.getElementById('game').style.left = "300%";
-		document.getElementById('nav1').style.backgroundImage = "url('/images/home2.png')";
-		document.getElementById('nav2').style.backgroundImage = "url('/images/chat.png')";
-		document.getElementById('nav3').style.backgroundImage = "url('/images/games.png')";
-		document.getElementById('nav4').style.backgroundImage = "url('/images/cydia.png')";
-		document.getElementById('nav5').style.backgroundImage = "url('/images/hamburger.png')";
-	}
-	function chat() {
-		document.getElementById('home').style.left = "-100%";
-		document.getElementById('chat').style.left = "0";
-		document.getElementById('game').style.left = "100%";
-		document.getElementById('nav1').style.backgroundImage = "url('/images/home.png')";
-		document.getElementById('nav2').style.backgroundImage = "url('/images/chat2.png')";
-		document.getElementById('nav3').style.backgroundImage = "url('/images/games.png')";
-		document.getElementById('nav4').style.backgroundImage = "url('/images/cydia.png')";
-		document.getElementById('nav5').style.backgroundImage = "url('/images/hamburger.png')";
-	}
-	function game() {
-		document.getElementById('home').style.left = "-200%";
-		document.getElementById('chat').style.left = "-100%";
-		document.getElementById('game').style.left = "0";
-		document.getElementById('nav1').style.backgroundImage = "url('/images/home.png')";
-		document.getElementById('nav2').style.backgroundImage = "url('/images/chat.png')";
-		document.getElementById('nav3').style.backgroundImage = "url('/images/games2.png')";
-		document.getElementById('nav4').style.backgroundImage = "url('/images/cydia.png')";
-		document.getElementById('nav5').style.backgroundImage = "url('/images/hamburger.png')";
-	}
-</script>
+
 </body>
 </html>
